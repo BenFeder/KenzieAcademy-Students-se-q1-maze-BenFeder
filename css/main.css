@@ -1,2 +1,32 @@
-
 /*  Put your CSS Here */
+.row {
+  display: flex;
+  margin-left: 75px;
+}
+
+.wall {
+  height: 20px;
+  width: 20px;
+  background-color: darkgray;
+}
+
+.path {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+}
+
+.player {
+  height: 20px;
+  width: 20px;
+  background-image: url(https://www.biography.com/.image/t_share/MTE5NTU2MzE2NTMzMzI3Mzcx/peter-dinklage-20787107-1-402.jpg);
+  background-size: cover;
+  animation-duration: 100ms;
+}
+
+.finish {
+  height: 20px;
+  width: 20px;
+  background-image: url(https://lh3.googleusercontent.com/OuZqDwJcoCna3sbEjlV58dwBxk2bFYdgwRqe3xOphhAm5RymSSfud3qNSy4pSaRYB9M);
+  background-size: cover;
+}
