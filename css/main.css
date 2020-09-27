@@ -26,33 +26,28 @@ h1 {
 }
 
 .wall {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-color: darkgray;
 }
 
 .path {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-color: white;
 }
 
 .player {
-  height: 25px;
-  width: 25px;
-  font-size: 10px;
-  font-weight: bold;
-  background-color: rgb(226, 178, 105);
-  display: flex;
-  align-items: center;
+  height: 30px;
+  width: 30px;
   background-image: url(https://www.biography.com/.image/t_share/MTE5NTU2MzE2NTMzMzI3Mzcx/peter-dinklage-20787107-1-402.jpg);
   background-size: cover;
   animation-duration: 100ms;
 }
 
 .finish {
-  height: 25px;
-  width: 25px;
+  height: 30px;
+  width: 30px;
   background-image: url(https://lh3.googleusercontent.com/OuZqDwJcoCna3sbEjlV58dwBxk2bFYdgwRqe3xOphhAm5RymSSfud3qNSy4pSaRYB9M);
   background-size: cover;
 }
