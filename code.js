@@ -66,7 +66,8 @@ function movePiece(event) {
         if (map[rows - 1][indexPlayer] != "W") {
           // If next cell up in previous array row isn't a wall
           map[rows].split("").splice(indexPlayer, 1, " ").join("");
-          map[rows - 1].split("").splice(indexPlayer, 1, "S").join(""); // move piece up
+          map[rows - 1].split("").splice(indexPlayer, 1, "S").join("");
+          createMaze(); // move piece up
         }
       }
     }
@@ -79,7 +80,8 @@ function movePiece(event) {
         if (map[rows + 1][indexPlayer] != "W") {
           // If next cell down in next array row isn't a wall
           map[rows].split("").splice(indexPlayer, 1, " ").join("");
-          map[rows + 1].split("").splice(indexPlayer, 1, "S").join(""); // move piece down
+          map[rows + 1].split("").splice(indexPlayer, 1, "S").join("");
+          createMaze(); // move piece down
         }
       }
     }
@@ -95,6 +97,7 @@ function movePiece(event) {
             .split("")
             .splice(indexPlayer - 1, 2, "S", " ")
             .join(""); // move piece left
+          createMaze();
         }
       }
     }
@@ -108,12 +111,14 @@ function movePiece(event) {
           map[rows][indexPlayer + 1] != "W" && // If next cell to the right isn't a wall
           map[rows][indexPlayer + 1] != "F" // If next cell over ISN'T the "Finish" cell
         ) {
-          map[rows].split("").splice(indexPlayer, 2, " ", "S").join(""); // move piece right
+          map[rows].split("").splice(indexPlayer, 2, " ", "S").join("");
+          createMaze(); // move piece right
         } else if (
           map[rows][indexPlayer + 1] != "W" && // If next cell to the right isn't a wall
           map[rows][indexPlayer + 1] == "F" // If next cell over is "Finish" cell
         ) {
           map[rows].split("").splice(indexPlayer, 2, " ", "S").join("");
+          createMaze();
           // winning condition met, display that the player won by moving player piece onto finish cell
           let displayWin = document.createElement("div");
           displayWin.innerText =
