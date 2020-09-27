@@ -10,6 +10,7 @@
 }
 
 img {
+  height: 40px;
   padding: 40px;
 }
 
@@ -18,12 +19,9 @@ h1 {
   font-size: 40px;
 }
 
-img {
-  height: 40px;
-}
-
 .row {
   display: flex;
+  overflow: relative;
   margin-left: 75px;
 }
 
@@ -42,6 +40,11 @@ img {
 .player {
   height: 25px;
   width: 25px;
+  font-size: 10px;
+  font-weight: bold;
+  background-color: rgb(226, 178, 105);
+  display: flex;
+  align-items: center;
   background-image: url(https://www.biography.com/.image/t_share/MTE5NTU2MzE2NTMzMzI3Mzcx/peter-dinklage-20787107-1-402.jpg);
   background-size: cover;
   animation-duration: 100ms;
