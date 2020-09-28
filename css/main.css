@@ -51,3 +51,8 @@ h1 {
   background-image: url(https://lh3.googleusercontent.com/OuZqDwJcoCna3sbEjlV58dwBxk2bFYdgwRqe3xOphhAm5RymSSfud3qNSy4pSaRYB9M);
   background-size: cover;
 }
+
+.displayWin {
+  font-size: 60px;
+  font-weight: bold;
+}
