@@ -121,7 +121,10 @@ function movePiece(event) {
       if (map[rows].indexOf("S") >= 0) {
         // If player piece exists in that row
         let indexPlayer = map[rows].indexOf("S"); // get index number of that player piece
-        if (map[rows][indexPlayer - 1] != "W") {
+        if (
+          map[rows][indexPlayer - 1] != "W" &&
+          map[rows][indexPlayer - 1] >= 0
+        ) {
           // If next cell to the left isn't a wall
           let rowItems = map[rows].split("");
           rowItems[indexPlayer - 1] = "S";
