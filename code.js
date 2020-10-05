@@ -148,7 +148,8 @@ function movePiece(event) {
         let indexPlayer = map[rows].indexOf("S"); // get index number of that player piece
         if (
           map[rows][indexPlayer + 1] != "W" && // If next cell to the right isn't a wall
-          map[rows][indexPlayer + 1] != "F" // If next cell over ISN'T the "Finish" cell
+          map[rows][indexPlayer + 1] != "F" && // If next cell over ISN'T the "Finish" cell
+          map[rows][indexPlayer + 1] >= 0 // can't exit maze
         ) {
           let rowItems = map[rows].split("");
           rowItems[indexPlayer] = " ";
@@ -175,5 +176,3 @@ function movePiece(event) {
     }
   }
 }
-
-// Citation: Thanks to Mike A. for giving me guidance on maze
